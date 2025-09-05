@@ -1,7 +1,8 @@
 import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { SortByOpions } from "@/constants";
-import { ChevronDown } from "lucide-react";
+import { SortDropdownProps } from "@/types";
 
 const SortDropdown = ({ sortByText, setSortByText }: SortDropdownProps) => {
 

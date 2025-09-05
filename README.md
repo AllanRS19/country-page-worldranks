@@ -70,5 +70,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Author
 
-- Website [https://allanromero-portfolio.vercel.app](https://allanromero-portfolio.vercel.app)
-- GitHub [@AllanRS19](https://github.com/AllanRS19)
+- Website: [https://allanromero-portfolio.vercel.app](https://allanromero-portfolio.vercel.app)
+- GitHub: [@AllanRS19](https://github.com/AllanRS19)

@@ -1,5 +1,5 @@
-import { SearchInputProps } from "@/types";
 import Image from "next/image";
+import { SearchInputProps } from "@/types";
 
 const SearchInput = ({
     setSearch
