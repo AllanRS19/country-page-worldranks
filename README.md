@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">Country Page WorldRanks | devChallenges</h1>
 
-## Getting Started
+<div align="center">
+   Solution for a challenge <a href="https://devchallenges.io/challenge/country-page" target="_blank">Country Page - WorldRanks
+</a> from <a href="http://devchallenges.io" target="_blank">devChallenges.io</a>.
+</div>
 
-First, run the development server:
+<div align="center">
+  <h3>
+    <a href="{https://your-demo-link.your-domain}">
+      Demo
+    </a>
+    <span> | </span>
+    <a href="https://github.com/AllanRS19/country-page-worldranks">
+      Solution
+    </a>
+    <span> | </span>
+    <a href="https://devchallenges.io/challenge/country-page">
+      Challenge
+    </a>
+  </h3>
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Table of Contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Overview](#overview)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- [Built with](#built-with)
+- [Features](#features)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Overview
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![screenshot_1](/public/screenshots/screenshot-1.png)
+![screenshot_2](/public/screenshots/screenshot-2.png)
 
-## Learn More
+This project has been one of my favorites. It involves working with large estructured data and it helped me to better understand how API fetching works, async calls, filtering methods.
 
-To learn more about Next.js, take a look at the following resources:
+### What I learned
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+During this project build, I learned how to properly manage a large amount of data that comes from APIs and how to effectively utilize that data to integrate it in the UI. Additionally, I learned how to correctly expect the data types for each property that comes from the API. It was a challenge, but using my knowledge and a bit of research, I was able to complete it on my own.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Useful resources
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [W3Schools](https://www.w3schools.com/) - This resource helped me to refresh my knowledge of working with tables and how to properly set its rows and columns. Also, I verified how to create a responsive CSS Grid.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/docs)
+- [Tailwind](https://tailwindcss.com/)
+
+## Features
+
+- Countries Data Fetching from REST Countries API.
+- Data sorting.
+- Filter by region.
+- Filter by status.
+- Search filter.
+- Individual country info.
+
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges-dashboard) challenge.
+
+## Author
+
+- Website [https://allanromero-portfolio.vercel.app](https://allanromero-portfolio.vercel.app)
+- GitHub [@AllanRS19](https://github.com/AllanRS19)

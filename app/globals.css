@@ -7,6 +7,8 @@
   --color-blue-custom: #4E80EE;
   --color-grey-custom: #6C727F;
   --color-grey-light: #D2D5DA;
+
+  --animate-show-country-data: showCountryData .4s ease-in;
 }
 
 @layer base {
@@ -160,7 +162,19 @@
     }
 
     .country-section-content {
-      @apply mt-[100px] md:mt-[180px] w-full md:w-[600px] h-screen max-h-screen bg-black-custom border-y md:border border-grey-custom/30 md:shadow-md md:rounded-lg pb-10 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden overflow-y-visible;
+      @apply mt-[100px] md:mt-[180px] w-full md:w-[600px] min-h-screen md:max-h-screen bg-black-custom border-y md:border border-grey-custom/30 md:shadow-md md:rounded-lg pb-10 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden overflow-y-visible;
+
+      .country-data-error {
+        @apply size-full flex flex-col items-center mt-16 gap-4;
+
+        h2 {
+          @apply text-xl text-red-400;
+        }
+
+        button {
+          @apply w-[240px] py-3 rounded-md text-sm bg-transparent border-2 cursor-pointer transition-colors duration-500 hover:bg-black-light text-grey-light border-black-light;
+        }
+      }
 
       .country-data-loader {
         @apply size-full flex flex-col items-center mt-16;
@@ -170,13 +184,46 @@
         }
       }
 
+      .country-info {
+        @apply animate-show-country-data;
+      }
+
       .country-image-container {
         @apply w-[250px] h-[170px] mx-auto rounded-lg mt-[-40px];
       }
 
       .country-secondary-info {
-        @apply w-full mt-7;
+        @apply w-full h-full max-h-[340px] mt-7 flex flex-col [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden overflow-y-auto;
+
+        .neighbouring-countries {
+          @apply w-full p-6 border-t border-t-black-light;
+
+          .neighbouring-countries-grid {
+            @apply w-full mt-4 flex flex-wrap gap-2 gap-y-5;
+
+            .neighbouring-country {
+              @apply w-[80px] flex flex-col gap-2;
+
+              .related-country-image-container {
+                @apply w-[70px] h-[50px] rounded-md overflow-hidden;
+              }
+            }
+          }
+        }
       }
     }
+  }
+}
+
+@keyframes showCountryData {
+  from {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.90)
+  }
+  to {
+    opacity: 1;
+    pointer-events: all;
+    transform: scale(1)
   }
 }

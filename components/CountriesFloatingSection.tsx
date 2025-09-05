@@ -27,7 +27,6 @@ const CountriesFloatingSection = () => {
         const initialFetch = async () => {
             try {
                 setErrorFetching("");
-                await new Promise((resolve) => setTimeout(resolve, 2000));
 
                 const response = await fetch("https://restcountries.com/v3.1/all?fields=name,flags,region,population,area,unMember,independent,cca3");
                 if (!response.ok) return setErrorFetching("There was an error fetching the data");

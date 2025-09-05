@@ -3,6 +3,7 @@ import locaFont from "next/font/local";
 import Image from "next/image";
 import "./globals.css";
 import Link from "next/link";
+import Copyright from "@/components/Copyright";
 
 const vietnamePro = locaFont({
   src: [
@@ -52,6 +53,7 @@ export default function RootLayout({
       <body
         className={`${vietnamePro.className} antialiased`}
       >
+        <Copyright />
         <main className="page-container">
           <div className="hero-image-container flex-center">
             <Link href="/">

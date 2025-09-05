@@ -35,6 +35,7 @@ declare interface CountryInfo {
         svg: string;
         alt: string;
     }
+    languages: object;
     name: {
         common: string;
         official: string;
@@ -42,6 +43,13 @@ declare interface CountryInfo {
     population: number;
     relatedCountries: RelatedCountriesInfo[];
     subregion: string;
+}
+
+declare interface CountryInfoTableProps {
+    countrySecondaryInfo: {
+        label: string;
+        value: string | string[] | Record<string>;
+    }[];
 }
 
 declare interface CountriesDataTableProps {
